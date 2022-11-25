@@ -29,7 +29,7 @@ export default function App({ Component, pageProps }: AppProps) {
         { merge: true }//set updates and replace, if wasnt there initially then create it as well
       );
     }
-  }, []);
+  }, [user]);
   // }, [user]); //Error on passing 'user' arg
 
   if (loading) return <Loading />
