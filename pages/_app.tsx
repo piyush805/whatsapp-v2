@@ -8,7 +8,7 @@ import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 
 import Login from './login';
-import Loading from '../components/Loading';
+import Loading from '../Components/Loading';
 
 import React, { useEffect} from "react";
 // import { doc, setDoc, serverTimestamp, collection } from "firebase/firestore";//v9
