@@ -17,6 +17,7 @@ import getRecipientEmail from "../utils/getRecipientEmail";
 import TimeAgo from "timeago-react";
 
 function ChatScreen({ chat, messages }) {
+    console.log("fromChatscreeen");
     const [user] = useAuthState(auth);
     const router = useRouter();
     const endOfMessagesRef = useRef(null);
@@ -38,6 +39,7 @@ function ChatScreen({ chat, messages }) {
         })
     }
     const showMessages = () => {
+        console.log("fromChatscreeen: show messages function");
         if (messagesSnapshot) {
             return messagesSnapshot.docs.map((message) => (
                 <Message
@@ -58,6 +60,7 @@ function ChatScreen({ chat, messages }) {
     }
 
     const sendMessage = (e) => {
+        console.log("fromChatscreeen: send messages function");
         e.preventDefault();
 
         db.collection("users").doc(user.uid).set({
