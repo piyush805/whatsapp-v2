@@ -8,7 +8,7 @@ import getRecipientEmail from "../../utils/getRecipientEmail";
 
 function Chat({chat, messages}) {
     const [user] = useAuthState(auth);
-
+    console.log("from [id] page");
     return (
         <Container>
             <Head>
